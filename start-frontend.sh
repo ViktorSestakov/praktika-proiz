@@ -1,17 +1,10 @@
 #!/bin/bash
-
-# Запуск Frontend на Linux/Mac
-
-echo "🎨 Запуск Frontend..."
+echo "Запуск фронтэнд!"
 echo ""
 
 cd frontend
 
-echo "✅ Frontend запущен на: http://localhostt:8000"
-echo ""
-echo "📝 Форма заявки: http://localhostt:8000"
-echo "📊 Панель управления: http://localhostt:8000/admin.html"
-echo ""
+echo "Сайт запущен на: http://localhostt:8000"
 
 # Запускаем HTTP сервер
 python3 -m http.server 8000

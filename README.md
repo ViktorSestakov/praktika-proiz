@@ -72,7 +72,7 @@ chmod +x start-frontend.sh
 
 ---
 
-## 🔧 Конфигурация
+## Конфигурация
 
 Создайте файл `.env` в папке `backend/`:
 
@@ -107,7 +107,7 @@ MONGODB_URI=mongodb://localhost:27017/praktika-DB
 
 ---
 
-## 📦 Зависимости
+## Зависимости
 
 ```
 Flask==2.3.3

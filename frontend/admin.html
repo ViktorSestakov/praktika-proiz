@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель управления</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Оставить заявку</a>
+                <a href="admin.html" class="nav-link active">Панель управления</a>
+            </div>
+            <div class="theme-toggle" id="themeToggle" title="Переключить тему">
+                <span class="theme-label" id="themeLabel">Тема</span>
+                <div class="toggle-track">
+                    <div class="toggle-thumb" id="toggleThumb">☀️</div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="admin-container">
+            <h1>Панель управления заявками</h1>
+
+            <div id="messages"></div>
+
+            <div class="filters">
+                <button class="btn btn-secondary active" id="filterAll">Все</button>
+                <button class="btn btn-secondary" id="filterNew">Новые</button>
+                <button class="btn btn-secondary" id="filterProcessing">В обработке</button>
+                <button class="btn btn-secondary" id="filterCompleted">Завершённые</button>
+            </div>
+
+            <div id="applicationsTable" class="applications-table">
+                <div class="loading">Загрузка заявок...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
